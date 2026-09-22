@@ -1,0 +1,36 @@
+{
+  "global": {
+    "files": "/src/**/*.*",
+    "skipGeneratedFunctionGroups": true
+  },
+  "dependencies": [
+    {
+      "url": "https://github.com/abaplint/deps",
+      "folder": "/deps",
+      "files": "/src/**/*.*"
+    }
+  ],
+  "syntax": {
+    "version": {
+      "release": "v793",
+      "language": "Normal"
+    },
+    "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)"
+  },
+  "rules": {
+    "begin_end_names": true,
+    "cds_parser_error": true,
+    "allowed_object_naming": true,
+    "check_ddic": true,
+    "check_include": true,
+    "check_syntax": true,
+    "identical_form_names": true,
+    "global_class": true,
+    "implement_methods": true,
+    "method_implemented_twice": true,
+    "parser_error": true,
+    "superclass_final": true,
+    "unknown_types": true,
+    "xml_consistency": true
+  }
+}
